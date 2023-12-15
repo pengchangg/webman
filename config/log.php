@@ -23,8 +23,11 @@ return [
                     Monolog\Logger::DEBUG,
                 ],
                 'formatter' => [
-                    'class' => Monolog\Formatter\LineFormatter::class,
-                    'constructor' => [null, 'Y-m-d H:i:s', true],
+                    'class' => Monolog\Formatter\JsonFormatter::class,
+                    'constructor' => [
+                        Monolog\Formatter\JsonFormatter::BATCH_MODE_JSON,
+                        true,
+                    ],
                 ],
             ]
         ],

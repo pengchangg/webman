@@ -33,7 +33,10 @@
     "symfony/var-dumper": "^6.4",
     "illuminate/redis": "^10.37",
     "symfony/cache": "^7.0",
-    "teamones/response-code-msg": "^0.0.1"
+    "teamones/response-code-msg": "^0.0.1",
+    "ext-pdo": "*",
+    "robmorgan/phinx": "^0.15.3",
+    "vlucas/phpdotenv": "^5.5"
   },
   "suggest": {
     "ext-event": "For better performance. "
@@ -46,6 +49,7 @@
       "app\\View\\Components\\": "./app/view/components"
     },
     "files": [
+      "./support/functions.php",
       "./support/helpers.php"
     ]
   },

@@ -19,7 +19,6 @@ return [
     'monitor' => [
         'handler' => process\Monitor::class,
         'reloadable' => false,
-        'count'=>3,
         'constructor' => [
             // Monitor these directories
             'monitorDir' => array_merge([
@@ -41,13 +40,13 @@ return [
         ]
     ],
 
-    'task' => [
-        'handler'  => app\Task::class
-    ],
+//    'task' => [
+//        'handler'  => app\Task::class
+//    ],
 
-    'websocket_test' => [
-        'handler' => app\Pusher::class,
-        'listen'  => 'websocket://0.0.0.0:8888',
-        'count'   => 1,
-    ],
+//    'websocket_test' => [
+//        'handler' => app\Pusher::class,
+//        'listen'  => 'websocket://0.0.0.0:8888',
+//        'count'   => 1,
+//    ],
 ];
