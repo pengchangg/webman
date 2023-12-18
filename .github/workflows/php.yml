@@ -63,9 +63,10 @@ jobs:
     - name: Run Process
       run: |
         cp .env.example .env
+        cat .env
+        sleep 10
         docker ps -a 
         make migrate
         php start.php start -d
-        sleep 2
         php start.php status
         curl -i -XPOST 'http://localhost:8787/index/db?aa=c&vxc=wcvc' -d "aaaaaaaasd=asd"

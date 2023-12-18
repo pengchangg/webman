@@ -14,9 +14,9 @@
 
 return [
     'default' => [
-        'host' => '192.168.50.205',
-        'password' => null,
-        'port' => 6379,
+        'host' => env("REDIS_HOST"),
+        'password' => env("REDIS_PASSWORD") ?? null,
+        'port' => env("REDIS_PORT"),
         'database' => 0,
     ],
 ];
