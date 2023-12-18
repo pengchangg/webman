@@ -62,7 +62,7 @@ jobs:
 
     - name: Run Process
       run: |
-        copy .env.example .env
+        cp .env.example .env
         make migrate
         php start.php start -d
         sleep 2
