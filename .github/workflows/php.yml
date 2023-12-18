@@ -34,6 +34,8 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
+        ports:
+          - 3306:3306
 
     steps:
     - uses: actions/checkout@v3
@@ -60,7 +62,10 @@ jobs:
 
     - name: Run Process
       run: |
+        copy .env.example .env
+        make migrate
         php start.php start -d
         sleep 2
         php start.php status
         docker ps -a 
+        curl -i -XPOST 'http://localhost:8787/index/db?aa=c&vxc=wcvc' -d "aaaaaaaasd=asd"
