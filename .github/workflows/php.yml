@@ -10,10 +10,8 @@ permissions:
   contents: read
 
 jobs:
-  container-job:
+  build:
     runs-on: ubuntu-latest
-    container: ubuntu-latest
-
     services:
       redis:
         image: redis
