@@ -31,11 +31,10 @@ return [
         'sqlite' => 'pdo_sqlite',
       ];
       return $arr[$driver];
-    }, env('db_driver', 'sqlite')),
-    'host' => env('db_host', '127.0.0.1'),
-    'dbname' => env('db_database', '/home/chang/dev/webman/webman.sqlite'),
-    'user' => env('db_username', 'root'),
-    'password' => env('db_password', 'root'),
-    'memory' => true
+    }, env('DB_DRIVER', 'sqlite')),
+    'host' => env('DB_HOST', '127.0.0.1'),
+    'dbname' => env('DB_NAME', '/home/chang/dev/webman/webman.sqlite'),
+    'user' => env('DB_USER', 'root'),
+    'password' => env('DB_PASSWORD', 'root'),
   ],
 ];

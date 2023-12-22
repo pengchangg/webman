@@ -14,15 +14,16 @@ final class Version20231222023007 extends AbstractMigration
 {
   public function getDescription(): string
   {
-    return 'test xxxxxxxxxxxxxx';
+    return 'test tables';
   }
 
   public function up(Schema $schema): void
   {
     // this up() migration is auto-generated, please modify it to your needs
     $table = $schema->createTable("test");
-    $table->addColumn('name', 'string');
+    $table->addColumn('name', 'string')->setLength(32)->setOptions(['fixed'=>true]);
     $table->addColumn('id', 'integer')->setAutoincrement(true);
+    $table->addColumn('age1', 'integer')->setNotnull(true)->setDefault(10);
     $table->setPrimaryKey(['id']);
   }
 
