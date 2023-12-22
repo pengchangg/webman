@@ -36,7 +36,8 @@
     "teamones/response-code-msg": "^0.0.1",
     "ext-pdo": "*",
     "robmorgan/phinx": "^0.15.3",
-    "vlucas/phpdotenv": "^5.5"
+    "vlucas/phpdotenv": "^5.5",
+    "wen-gg/webman-migrations": "^1.0"
   },
   "suggest": {
     "ext-event": "For better performance. "
