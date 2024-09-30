@@ -1,0 +1,1 @@
+{"version":1,"defects":{"TestConfig::testConfig":7,"TestConfig::testRedis":8,"TestConfig::testDatabase":8},"times":{"TestConfig::testConfig":0.014,"TestConfig::testRedis":0.001,"TestConfig::testDatabase":0.013}}
