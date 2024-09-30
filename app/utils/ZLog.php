@@ -13,7 +13,7 @@ use function config;
 use function is_array;
 
 /**
- * Class Log
+ * Class ZLog
  * @package support
  *
  * @method static void log($level, $message, array $context = [])
